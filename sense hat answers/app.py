@@ -13,7 +13,7 @@ def index():
 @app.route('/success/<name>',methods = ['POST', 'GET'])
 def success(name):
     sense.show_message(name)
-    return 'welcome %s' % name
+    return 'Thank you! Your message was: %s' % name 
  
 
 @app.route('/login', methods = ['POST', 'GET'])
