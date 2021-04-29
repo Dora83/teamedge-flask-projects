@@ -9,43 +9,31 @@ def index():
 
 @app.route('/red')
 def red():
-    color = 'red'
-    return render_template('index.html', color = color)
+    return render_template('red.html')
 
 @app.route('/orange')
 def orange():
-    color = 'orange'
-    return render_template('index.html', color = color)
+    return render_template('orange.html')
 
 @app.route('/yellow')
 def yellow():
-    color = 'yellow'
-    return render_template('index.html', color = color)
+    return render_template('yellow.html')
 
 @app.route('/green')
 def green():
-    color = 'green'
-    return render_template('index.html', color = color)
+    return render_template('green.html')
 
 @app.route('/blue')
 def blue():
-    color = 'blue'
-    return render_template('index.html', color = color)
+    return render_template('blue.html')
 
 @app.route('/indigo')
 def indigo():
-    color = 'indigo'
-    return render_template('index.html', color = color)
+    return render_template('indigo.html')
 
 @app.route('/violet')
 def violet():
-    color = 'violet'
-    return render_template('index.html', color = color)
-
-@app.route('/rainbow')
-def rainbow():
-    links = ['http://0.0.0.0:5000/red', 'http://0.0.0.0:5000/orange', 'http://0.0.0.0:5000/yellow', 'http://0.0.0.0:5000/green', 'http://0.0.0.0:5000/blue', 'http://0.0.0.0:5000/indigo', 'http://0.0.0.0:5000/violet']
-    return render_template('rainbow.html', links = links)
+    return render_template('violet.html')
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
